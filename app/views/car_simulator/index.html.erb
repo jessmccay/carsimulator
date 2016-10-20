@@ -1,0 +1,19 @@
+<h1>Car Simulation</h1>
+<br/>
+Make: <%=@new_car.make%>
+<br/>
+Year: <%=@new_car.year%>
+<br/>
+Speed: <%=@new_car.speed%>
+<br/>
+Lights: <%=@new_car.lights%>
+<br/>
+Parking Brake Status: <%=@new_car.parking_brake%>
+
+<form action="/car_simulator/accelerate" method="get">
+<input type="submit" value="Accelerate"/>
+</form>
+
+<form action="/car_simulator/brake" method="get">
+  <input type="submit" value="Brake"/>
+</form>
