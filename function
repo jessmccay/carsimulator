@@ -1,0 +1,25 @@
+Ruby
+
+def add_odds (arr)
+  sum = 0
+  arr.each do |x|
+    if x % 2 != 0
+      puts sum +=x
+    end
+  end
+end
+
+
+JavaScript
+
+sum = 0;
+function addOdds(arr) {
+arr.foreach(
+if(x % 2 != 0));
+return sum += x;
+};
+
+
+arr = [3,5,6,7,9]
+
+arr.forEach(function())

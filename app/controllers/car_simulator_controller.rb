@@ -36,12 +36,19 @@ class CarSimulatorController < ApplicationController
   def lights
   end
 
+
+
   def toggle
   end
 
   def parking_brake
+    @new_car = YAML.load(session[:new_car])
+    @new_car.parking_brake
+    session[:new_car] = @new_car.to_yaml
+    render '/car_simulator/index'
   end
 
   def set_parking_brake
+    @parking_brake
   end
 end
